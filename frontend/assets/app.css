@@ -1,0 +1,236 @@
+:root {
+  --cc-navy: #14283f;
+  --cc-blue: #245b83;
+  --cc-ink: #202d3b;
+  --cc-muted: #687786;
+  --cc-line: #e1e7ed;
+  --cc-bg: #f5f7f9;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--cc-bg) !important;
+  color: var(--cc-ink);
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+}
+.cc-header {
+  min-height: 66px;
+  padding: 12px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: #fff;
+  border-bottom: 1px solid var(--cc-line);
+}
+.cc-brand {
+  color: var(--cc-navy);
+  font-size: 22px;
+  font-weight: 750;
+  letter-spacing: -.6px;
+  text-decoration: none;
+}
+.cc-brand span { color: var(--cc-blue); }
+.cc-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+.cc-nav a {
+  color: #425466;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 650;
+}
+.cc-nav a:hover { color: var(--cc-blue); }
+.cc-nav .cc-nav-primary {
+  padding: 9px 14px;
+  border: 1px solid #cbd6df;
+  border-radius: 6px;
+}
+.card, .portal-card, .box {
+  border-radius: 10px !important;
+}
+button, .btn { border-radius: 6px !important; }
+.form-control, .form-select {
+  border-radius: 6px !important;
+  border-color: #d7e0e7 !important;
+}
+.side { background: var(--cc-navy) !important; }
+.cc-page-footer {
+  padding: 20px;
+  text-align: center;
+  color: var(--cc-muted);
+  font-size: 12px;
+}
+@media(max-width:650px) {
+  .cc-header { align-items: flex-start; flex-direction: column; }
+  .cc-nav { gap: 12px; }
+  .cc-nav a { font-size: 12px; }
+}
+
+/* CertiChain homepage */
+.topbar {
+  min-height: 70px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-bottom: 1px solid var(--cc-line);
+}
+.brand {
+  color: var(--cc-navy);
+  font-size: 23px;
+  font-weight: 750;
+  text-decoration: none;
+  letter-spacing: -.7px;
+}
+.brand span { color: var(--cc-blue); }
+.topbar nav {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+.topbar nav a {
+  color: #425466;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+.topbar nav .nav-button {
+  padding: 10px 16px;
+  border: 1px solid #cbd6df;
+  border-radius: 6px;
+}
+.hero {
+  max-width: 1120px;
+  margin: auto;
+  padding: 76px 28px 45px;
+}
+.eyebrow {
+  color: var(--cc-blue);
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 1.7px;
+}
+.hero h1 {
+  margin: 19px 0 16px;
+  color: var(--cc-navy);
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.12;
+  letter-spacing: -2px;
+}
+.hero h1 span { color: var(--cc-blue); }
+.intro {
+  max-width: 650px;
+  color: var(--cc-muted);
+  font-size: 17px;
+  line-height: 1.75;
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 28px 0 55px;
+}
+.button {
+  display: inline-block;
+  padding: 13px 19px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 650;
+}
+.button.primary {
+  background: var(--cc-navy);
+  color: #fff;
+}
+.button.secondary {
+  background: #fff;
+  color: var(--cc-navy);
+  border: 1px solid #cbd6df;
+}
+.portal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 17px;
+}
+.portal-card {
+  min-height: 210px;
+  padding: 24px;
+  display: block;
+  background: #fff;
+  border: 1px solid var(--cc-line);
+  border-radius: 9px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color .15s ease, transform .15s ease;
+}
+.portal-card:hover {
+  border-color: #9aafc0;
+  transform: translateY(-2px);
+}
+.card-number {
+  color: var(--cc-blue);
+  font-size: 12px;
+  font-weight: 750;
+}
+.portal-card h2 {
+  margin: 17px 0 9px;
+  font-size: 19px;
+  color: var(--cc-navy);
+}
+.portal-card p {
+  min-height: 65px;
+  color: var(--cc-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+.portal-card span {
+  color: var(--cc-blue);
+  font-size: 13px;
+  font-weight: 700;
+}
+.trust-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 55px;
+  margin-top: 40px;
+  padding: 22px 0;
+  border-top: 1px solid var(--cc-line);
+}
+.trust-strip div { display: grid; gap: 5px; }
+.trust-strip strong {
+  color: var(--cc-navy);
+  font-size: 13px;
+}
+.trust-strip small {
+  color: var(--cc-muted);
+  font-size: 12px;
+}
+footer {
+  padding: 22px;
+  text-align: center;
+  color: var(--cc-muted);
+  border-top: 1px solid var(--cc-line);
+  font-size: 12px;
+}
+@media(max-width:700px) {
+  .topbar {
+    padding: 15px 5%;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .topbar nav {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .topbar nav a { font-size: 12px; }
+  .hero { padding: 48px 20px 30px; }
+  .portal-grid { grid-template-columns: 1fr; }
+  .portal-card p { min-height: 0; }
+  .trust-strip { gap: 22px; }
+}
